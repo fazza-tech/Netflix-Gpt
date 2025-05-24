@@ -23,7 +23,7 @@ const Login = () => {
         <input type='email' placeholder='Email or phone number'  className='p-2 m-2 w-full'/>
         <input type='password' placeholder='Password' className='p-2 m-2 w-full' />
         <button type='submit' className='p-2 my-4 bg-red-600 w-full rounded cursor-pointer'>{isSignin?"Sign In":"Sign Up"}</button>
-        <p className='py-3 cursor-pointer' onClick={isSigninToggle}>New to netflix? SignUp now</p>
+        <p className='py-3 cursor-pointer' onClick={isSigninToggle}>{isSignin?"New to netflix? SignUp now":"Already have an account? Signin now"}</p>
       </form>
     </div>
   )
